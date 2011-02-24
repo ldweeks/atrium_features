@@ -131,6 +131,50 @@ function atrium_casetracker_views_default_views() {
       'field' => 'timestamp',
       'relationship' => 'none',
     ),
+    'field_due_date_value' => array(
+      'label' => 'Due Date',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 0,
+      'label_type' => 'widget',
+      'format' => 'default',
+      'multiple' => array(
+        'multiple_number' => '',
+        'multiple_from' => '',
+        'multiple_to' => '',
+        'group' => '',
+      ),
+      'repeat' => array(
+        'show_repeat_rule' => '',
+      ),
+      'fromto' => array(
+        'fromto' => 'both',
+      ),
+      'exclude' => 0,
+      'id' => 'field_due_date_value',
+      'table' => 'node_data_field_due_date',
+      'field' => 'field_due_date_value',
+      'relationship' => 'none',
+    ),
   ));
   $handler->override_option('filters', array(
     'case' => array(
@@ -329,6 +373,7 @@ function atrium_casetracker_views_default_views() {
       'assign_to' => 'assign_to',
       'case_status_id' => 'case_status_id',
       'timestamp' => 'timestamp',
+      'field_due_date_value' => 'field_due_date_value',
     ),
     'info' => array(
       'pid' => array(
@@ -356,6 +401,10 @@ function atrium_casetracker_views_default_views() {
         'separator' => '',
       ),
       'timestamp' => array(
+        'separator' => '',
+      ),
+      'field_due_date_value' => array(
+        'sortable' => 1,
         'separator' => '',
       ),
     ),

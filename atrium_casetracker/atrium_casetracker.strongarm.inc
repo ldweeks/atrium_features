@@ -120,6 +120,25 @@ function atrium_casetracker_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'content_extra_weights_casetracker_basic_case';
+  $strongarm->value = array(
+    'title' => '-5',
+    'body_field' => '-2',
+    'revision_information' => '3',
+    'author' => '2',
+    'options' => '4',
+    'comment_settings' => '6',
+    'menu' => '-3',
+    'taxonomy' => '-4',
+    'book' => '1',
+    'attachments' => '5',
+    'og_nodeapi' => '0',
+  );
+
+  $export['content_extra_weights_casetracker_basic_case'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_casetracker_basic_case';
   $strongarm->value = array(
     0 => 'status',
